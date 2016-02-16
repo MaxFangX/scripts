@@ -7,7 +7,7 @@ def main(pages, days):
     pages, days = int(pages), int(days)
     pages_per_day = pages // days + 1
     for i in range(days):
-        end_page = pages if i == days - 1 else pages_per_day * (i + 1 - 1)
+        end_page = pages if i == days - 1 else pages_per_day * (i + 1)
         print "Day {}: Page {} to {}".format(i + 1, pages_per_day * i + 1, end_page)
 
 
